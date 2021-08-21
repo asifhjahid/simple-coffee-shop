@@ -1,116 +1,118 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header{
-    width: 100%;
-    height: 100vh;
-    background-color: lightblue;
-    background-image: linear-gradient(
-        rgba(97,47,18,0.692),
-        rgba(97,47,18,0.692)
-    ), url("/Images/coffeeshop.jpg");
-    background-size: cover;
-    background-position: center;
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+  background-image: linear-gradient(
+      rgba(97, 47, 18, 0.692),
+      rgba(97, 47, 18, 0.692)
+    ),
+    url("/Images/coffeeshop.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.navbar{
-    height: 10%;
-    display: flex;
+.navbar {
+  display: flex;
+  height: 10%;
+}
+.nav-left {
+  position: relative;
+  flex-basis: 30%;
+  background-color: #f2f3f4;
+}
+.nav-icons {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.nav-icons ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.nav-icons ul li i {
+  color: gray;
+  cursor: pointer;
+}
+.nav-right {
+  position: relative;
+  flex-basis: 70%;
+}
+.nav-menu {
+  position: absolute;
+  top: 15%;
+  right: 2%;
+}
+.nav-menu ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.nav-menu ul li a:hover {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+.logo {
+  font-family: "Pacifico", cursivei !important;
+  font-size: 25px;
+}
+.content {
+  display: flex;
+  height: 90%;
+}
+.content-left {
+  position: relative;
+  flex-basis: 30%;
+  background-color: #f2f3f4;
+}
+.socialmedia {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+}
+.socialmedia ul li {
+  width: 30px;
+  height: 30px;
 
+  background-color: grey;
+  margin: 10px;
+  text-align: center;
+  list-style: none;
 }
-.nav-left{
-    flex-basis: 35%;
-    background-color: #F2F3F4;
-    position: relative;
+.socialmedia ul li i {
+  padding-top: 8px;
+  color: white;
 }
-.nav-icons{
-    left: 5%;
-    top: 10%;
-    position: absolute;
+.socialmedia ul li i:hover {
+  color: blue;
 }
-.nav-icons ul li{
-    display: inline-block;
-    margin-right: 15px;
+.content-right {
+  position: relative;
+  flex-basis: 70%;
 }
-.nav-icons ul li i{
-    color: gray;
-    cursor: pointer;
+.text {
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
 }
-.nav-right{
-    flex-basis: 70%;
-    position: relative;
+.text h1,
+p {
+  color: white;
+  font-family: "Dancing Script", cursive;
 }
-.nav-menu{
-    top: 15%;
-    right: 2%;
-    position: absolute;
+.display {
+  position: absolute;
+  bottom: 10%;
+  left: -23%;
 }
-.nav-menu ul li{
-    display: inline-block;
-    margin-left: 10px;
-}
-.nav-menu ul li a{
-    color: white;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-.nav-menu ul li a:hover{
-    border-bottom: 1px solid white;
-    padding-bottom: 5px;
-}
-.logo{
-    font-family: 'Pacifico', cursivei !important;
-    font-size: 25px;
-}
-.content{
-    height: 90%;
-    display: flex;
-}
-.content-left{
-    flex-basis: 35%;
-    background-color: #F2F3F4;
-    position: relative;
-}
-.socialmedia{
-    bottom: 10px;
-    left: 5px;
-    position:absolute;
-}
-.socialmedia ul li{
-    height: 30px;
-    width: 30px;
-    background-color: grey;
-    margin: 10px;
-    text-align: center;
-    list-style: none;
-}
-.socialmedia ul li i{
-    padding-top: 8px;
-    color: white;
-}
-.socialmedia ul li i:hover{
-    color: blue;
-}
-.content-right{
-    flex-basis: 70%;
-    position: relative;
-}
-.text{
-    right: 10%;
-    bottom: 20%;
-    position: absolute;
-}
-.text h1, p{
-    color: white;
-    font-family: 'Dancing Script', cursive;
-}
-.display{
-    left: -40%;
-    bottom: 20%;
-    position: absolute;
-}
-.display img{
-    height: 30%;
-    width: 30%;
+.display img {
+  width: 100%;
+  height: 100%;
 }
