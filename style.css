@@ -11,7 +11,7 @@ header {
       rgba(97, 47, 18, 0.692),
       rgba(97, 47, 18, 0.692)
     ),
-    url("/Images/coffeeshop.jpg");
+    url("/images/coffeeshop.jpg");
   background-size: cover;
   background-position: center;
 }
